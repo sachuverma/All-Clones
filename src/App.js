@@ -1,9 +1,18 @@
+import React from "react";
+
 import "./App.css";
+import Header from "./Header";
+import Sidebar from "./Sidebar";
+import Recommended from "./Recommended";
 
 function App() {
   return (
     <div className="app">
-      <h1>Hello Guys!</h1>
+      <Header />
+      <div className="app__page">
+        <Sidebar />
+        <Recommended />
+      </div>
     </div>
   );
 }
