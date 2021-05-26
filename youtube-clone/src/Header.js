@@ -33,7 +33,7 @@ function Header() {
           type="text"
           placeholder="Search"
         />
-        <Link to={`/search/${inputSearch}`}>
+        <Link disabled to={`/search/${inputSearch}`}>
           <SearchIcon className="header__inputButton" />
         </Link>
       </div>

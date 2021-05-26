@@ -5,6 +5,8 @@ import ChannelRow from "./ChannelRow";
 import VideoRow from "./VideoRow";
 import "./SearchPage.css";
 
+let videos = require("./search-data.json");
+
 function SearchPage() {
   return (
     <div className="searchPage">
@@ -13,7 +15,6 @@ function SearchPage() {
         <h2>FILTER</h2>
       </div>
       <hr />
-
       <ChannelRow
         image={`https://yt3.ggpht.com/ytc/AAUvwnh8DgqG3-bmzHGDzGJ8jo2ZOpTr7BX45EdOCsih=s176-c-k-c0x00ffffff-no-rj`}
         channel={`AniMelody – Anime Music`}
@@ -28,22 +29,20 @@ function SearchPage() {
         Submit your subtitles:
         cc.animelody.net`}
       />
-
       <hr />
 
-      <VideoRow
-        views={`783k`}
-        subs={`289k`}
-        description={`Tokyo Revengers OP Full Song "Cry Baby" by Official HIGE DANdism
-        TV Anime "Tokyo Revengers" Opening Theme Full
-        Official HIGE DANdism - Cry Baby
-        
-        Buy/Stream...`}
-        timestamp={`May 6, 2021`}
-        channel={`AniMelody - Anime Music`}
-        title={`Tokyo Revengers - Opening Full『Cry Baby』by Official HIGE DANdism`}
-        image={`http://i3.ytimg.com/vi/IW0xruff7Hc/hqdefault.jpg`}
-      />
+      {videos.map((video) => (
+        <VideoRow
+          key={video.title}
+          views={video.views}
+          subs={video.subs}
+          description={video.description}
+          timestamp={video.timestamp}
+          channel={video.channel}
+          title={video.title}
+          image={video.image}
+        />
+      ))}
     </div>
   );
 }

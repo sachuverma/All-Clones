@@ -12,7 +12,7 @@
 .sidebarRow__title {
   flex: 1;
   margin-left: 20px;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 500;
 }
 
@@ -39,4 +39,9 @@
 
 .sidebarRow.selected > .sidebarRow__title {
   font-weight: bold;
+}
+
+.sidebarChannel__logo {
+  height: 30px !important;
+  width: 30px !important;
 }

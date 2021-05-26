@@ -27,6 +27,11 @@
   border: none;
 }
 
+.header__input > input:focus-visible {
+  outline: none;
+  border: none;
+}
+
 .header__inputButton {
   width: 50px !important;
   background-color: #fafafa;

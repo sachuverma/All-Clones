@@ -4,10 +4,10 @@
   max-width: 700px;
 }
 
-.videoRow > img {
-  object-fit: contain;
-  height: 138px;
-  width: 300px;
+.videoRow__thumbnail {
+  height: 140px;
+  width: 250px;
+  object-fit: cover;
 }
 
 .videoRow__text {
