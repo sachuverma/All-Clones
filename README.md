@@ -6,5 +6,6 @@
 - Youtube Front-end clone using React.js, hosted on Firebase
 - Youtube Home Page, with Recommended Videos List
 - Youtube Searchbar, and Search Page showing Channel Details and Videos List
+- A Basic begginner friendly clone, only 2 pages, with static data, no other functionality
 
 ![Youtube-Clone](./images/youtube-clone.gif)
