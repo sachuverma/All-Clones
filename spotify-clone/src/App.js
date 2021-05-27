@@ -12,7 +12,7 @@ import { getTokenFromUrl } from "./spotify";
 const spotify = new SpotifyWebApi();
 
 function App() {
-  const [{ user, token }, dispatch] = useDataLayerValue();
+  const [{ token }, dispatch] = useDataLayerValue();
 
   useEffect(() => {
     const hash = getTokenFromUrl();
@@ -33,10 +33,18 @@ function App() {
           user: user,
         });
       });
-    }
 
-    console.log("token is", _token);
-  }, []);
+      spotify
+        .getUserPlaylists()
+        .then((playlists) => {
+          dispatch({
+            type: "SET_PLAYLISTS",
+            playlists,
+          });
+        })
+        .catch((err) => console.log("playlist err", err));
+    }
+  }, [token, dispatch]);
 
   return (
     <div className="app">

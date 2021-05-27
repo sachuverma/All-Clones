@@ -4,6 +4,7 @@
   cursor: pointer;
   transition: 200ms color ease-in;
   display: flex;
+  align-items: center;
 }
 
 .sidebarOption:hover {
@@ -11,5 +12,12 @@
 }
 
 .sidebarOption__icon {
-  margin-right: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.sidebarOption > p {
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: 14px;
 }
