@@ -36,9 +36,15 @@ function Sidebar() {
       <strong className="sidebar__title">MY PLAYLISTS</strong>
       <hr />
 
-      {playlists?.items?.map((playlist) => (
-        <SidebarOption title={playlist.name} />
-      ))}
+      {playlists?.items?.map((playlist) => {
+        let playlist_name = playlist.name;
+
+        if (playlist_name.length > 35) {
+          playlist_name = playlist_name.substring(0, 35) + "...";
+        }
+
+        return <SidebarOption title={playlist_name} />;
+      })}
     </div>
   );
 }

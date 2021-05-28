@@ -40,7 +40,7 @@ function App() {
           console.log("get playlists", playlists);
           dispatch({
             type: "SET_PLAYLISTS",
-            playlists: playlists.items,
+            playlists: playlists,
           });
         })
         .catch((err) => console.log("playlist err", err));
