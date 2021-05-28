@@ -16,7 +16,11 @@ function Footer() {
   return (
     <div className="footer">
       <div className="footer__left">
-        <img src="" alt="" />
+        <img
+          className="footer__albumLogo"
+          src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/pink-cloud-cd-cover-music-design-template-258c703e9959b4635649e3944488c688.jpg?ts=1612230560"
+          alt="album cover"
+        />
         <div className="footer__songInfo">
           <h4>song name</h4>
           <p>description</p>
@@ -25,7 +29,7 @@ function Footer() {
       <div className="footer__center">
         <Shuffle className="footer__green" />
         <SkipPrevious className="footer__icon" />
-        <PlayCircleOutline fontSize="large" />
+        <PlayCircleOutline className="footer__icon" fontSize="large" />
         <SkipNext className="footer__icon" />
         <Repeat className="footer__green" />
       </div>

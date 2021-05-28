@@ -3,7 +3,7 @@ export const initialState = {
 
   //  REMOVE AFTER DEVELOPING
   token:
-    "BQC_4FjeJxAY0FSdekcBdZ45cgaTL6mvebr4CBzDWThsU0yaMZgmxjEF86iv6YR-YaPgoRkxmq9ObnUC8FpWEBa7AQaPglqsU3fU2GHHM3bSx56kmI4g9H43a_dw1LXro_LOCvQgzcF9KtkDnKPeTen9guuyvClktIJg13qkHaewSiUc",
+    "BQAgJjoVI-y5s5_o2Q0i-VtKybHAgMh-XwFpmKyW-9buspCzFaPykeiVf_-8Xw-6uiFjx_pv_5GnBL4QYmSpMPNUSI9bpyrMC76NImUoE9Qu-tU9BeGCRFN8BqDvUhnX5J7NPxLuQh5shm1LaofXsquj0jKBZf8Mw7lmOImLUP50g22g",
   playlists: [],
   playing: false,
   item: null,
