@@ -1,6 +1,12 @@
 import React from "react";
 
-import { Home, Search, LibraryMusic } from "@material-ui/icons";
+import {
+  Home,
+  Search,
+  LibraryMusic,
+  AddBox,
+  Favorite,
+} from "@material-ui/icons";
 import { useDataLayerValue } from "./DataLayer";
 
 import SidebarOption from "./SidebarOption";
@@ -20,6 +26,11 @@ function Sidebar() {
       <SidebarOption title="Home" Icon={Home} />
       <SidebarOption title="Search" Icon={Search} />
       <SidebarOption title="Your Library" Icon={LibraryMusic} />
+
+      <br />
+
+      <SidebarOption title="Create Playlist" Icon={AddBox} />
+      <SidebarOption title="Liked Songs" Icon={Favorite} />
 
       <br />
       <strong className="sidebar__title">MY PLAYLISTS</strong>
