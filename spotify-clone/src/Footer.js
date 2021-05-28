@@ -7,6 +7,7 @@ import {
   Repeat,
   VolumeDown,
   PlaylistPlay,
+  FavoriteBorderOutlined,
 } from "@material-ui/icons";
 import { Grid, Slider } from "@material-ui/core";
 
@@ -18,31 +19,32 @@ function Footer() {
       <div className="footer__left">
         <img
           className="footer__albumLogo"
-          src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/pink-cloud-cd-cover-music-design-template-258c703e9959b4635649e3944488c688.jpg?ts=1612230560"
+          src="https://www.coverstory.no/wp-content/uploads/2020/10/Dua-2.jpeg"
           alt="album cover"
         />
         <div className="footer__songInfo">
-          <h4>song name</h4>
-          <p>description</p>
+          <h4>Levitating</h4>
+          <p>Dua Lipa, DaBaby</p>
         </div>
+        <FavoriteBorderOutlined className="album__icon" />
       </div>
       <div className="footer__center">
-        <Shuffle className="footer__green" />
-        <SkipPrevious className="footer__icon" />
-        <PlayCircleOutline className="footer__icon" fontSize="large" />
-        <SkipNext className="footer__icon" />
-        <Repeat className="footer__green" />
+        <Shuffle className="footer__green rem-2" />
+        <SkipPrevious className="footer__icon rem-2" />
+        <PlayCircleOutline className="footer__icon rem-4" fontSize="large" />
+        <SkipNext className="footer__icon rem-2" />
+        <Repeat className="footer__green rem-2" />
       </div>
       <div className="footer__right">
         <Grid container spacing={2}>
           <Grid item>
-            <PlaylistPlay />
+            <PlaylistPlay className="rem-2 footer__icon" />
           </Grid>
           <Grid item>
-            <VolumeDown />
+            <VolumeDown className="rem-2 footer__icon" />
           </Grid>
           <Grid item xs>
-            <Slider />
+            <Slider className="rem-2" />
           </Grid>
         </Grid>
       </div>

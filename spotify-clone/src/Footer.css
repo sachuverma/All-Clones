@@ -17,13 +17,32 @@
   width: 300px;
 }
 
+.album__icon {
+  margin-left: 10px;
+  font-size: 1.5rem !important;
+}
+
+.album__icon:hover {
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+  color: #1ed15e;
+}
+
 .footer__center {
   flex: 0.4;
   padding: 0 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 300px;
+  max-width: 250px;
+}
+
+.rem-4 {
+  font-size: 3.6rem !important;
+}
+
+.rem-2 {
+  font-size: 1.8rem !important;
 }
 
 .footer__right {
@@ -31,6 +50,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 250px;
 }
 
 .footer__green {
@@ -49,11 +69,12 @@
   height: 60px;
   width: 60px;
   margin-right: 20px;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .footer__icon:hover,
 .footer__green:hover {
+  cursor: pointer;
   transition: transform 0.2s ease-in-out;
   transform: scale(1.2) !important;
 }
