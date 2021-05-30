@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "sachu-spotify",
     "public": "build",
     "ignore": [
       "firebase.json",
