@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "sachu-you-tube",
     "public": "build",
     "ignore": [
       "firebase.json",
